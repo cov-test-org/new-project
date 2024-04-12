@@ -13,9 +13,8 @@ jobs:
     - name: Run tests and collect coverage
       run: pytest --cov .
     - name: Upload coverage reports to Codecov
-      run: |
-        curl -Os https://cli.codecov.io/v0.4.4/linux/codecov
-        sudo chmod +x codecov
-        ./codecov --verbose --enterprise-url https://mangocandy.site/gh/cov-test-org upload-process --git-service github --fail-on-error -t ${{ secrets.CODECOV_TOKEN }} -n 'service'-${{ github.run_id }} -F service
-
+      uses: codecov/codecov-action@v3
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        url: https://mangocandy.site
 
