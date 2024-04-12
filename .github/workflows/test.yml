@@ -16,6 +16,6 @@ jobs:
       run: |
         curl -Os https://cli.codecov.io/v0.4.4/linux/codecov
         sudo chmod +x codecov
-        ./codecov --verbose --enterprise-url https://mangocandy.site/gh/cov-test-org upload-process --git-service github --fail-on-error -t ${{ secrets.CODECOV_TOKEN }} -n 'service'-${{ github.run_id }} -F service
+        ./codecov --verbose --enterprise-url https://mangocandy.site/gh/cov-test-org upload-process --fail-on-error -t ${{ secrets.CODECOV_TOKEN }} -n 'service'-${{ github.run_id }} -F service
 
 
