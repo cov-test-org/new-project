@@ -1,0 +1,1 @@
+[![codecov](https://mangocandy.site/gh/cov-test-org/new-project/graph/badge.svg?token=YR52DTAC66)](https://mangocandy.site/gh/cov-test-org/new-project)
